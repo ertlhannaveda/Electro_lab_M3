@@ -177,7 +177,7 @@ For this measurement, we used the following list of tools:
 \begin{itemize}
 \item ST $\mu$A741CN operational amplifier
 \item OK Industries Inc. CM-140 L breadboard
-\item Resistors: 22 k$\Omega$ (1 piece), 10 k$\Omega$ (2 pieces), 100 k$\Omega$ (1 piece)
+\item Resistors: 22 k$\Omega$ (1 piece), 10 k$\Omega$ (2 pieces), 100 k$\Omega$ (1 piece),  1 k$\Omega$ (1 piece)
 \item Jumping wires (6 pieces)
 \item Crocodile clips (6 pieces)
 \item Banana plugs (6 pieces)
@@ -193,14 +193,40 @@ For this measurement, we used the following list of tools:
 
 \pagebreak\section{Measurements}
 
-\subsection{Switching voltage of the comparator with an operational amplifier}
+\subsection{Switching voltage of the comparator with an operational\\ amplifier}
+
+For the first measurement, we had the ciruit setup as seen on figure 1 
+and described in the Measurement Setup section above.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.5\linewidth]{task1.jpg}
-    \caption{a}
+    \caption{Simple comparator setup with two resistors}
     \label{fig:task1}
 \end{figure}
+We wanted to determine 
+the switching threshold of the configuration. We began varying the the voltage, 
+satrting from 5V on the input, we found the output to be 4.468V. At this voltage we expected 
+the output to be saturated to the positive supply value, which is mostly what we found, 
+with a deviation of value:
+\newline \begin{center} $ Deviation =\frac{U_{+supp} - U_{out}}{U_{+supp}}=\frac{5 - 4.468}{5}=0.106$ \end{center}
+As the configuration acts as a voltage divider on the non-inverting input of 
+the operational amplifier, from this we could calculate that we suspect the 
+switching threshold to be around:
+\newline \begin{center} $ U_{+} =\frac{R_2}{R_1 + R_2}\cdot U_{+supp}=\frac{10}{32}\cdot5=1.5625 V$ \end{center}
+Varying the voltage, experimentally we found the switching threshold to be at 
+1.6 V, where the output showed -3.058 V on the multimeter. \\
+While the measured switching voltage is close to the theoretical value we expected 
+at only 2.4\% deviation, we expected the output to saturate to the negative 
+supply at -5 V. However, we found that the output went no lower than -3.058 V.\\
+We believe this could be because the operational amplifiers we used were not 
+rail-to-rail devies. In this case the internal structure of the amplifier is such 
+that voltage drops occur on the internal output stage transistors. The asymmetry 
+of the voltage drops in the positive and negative saturation regimes can be due 
+to the asymmetric output stage on which this voltage drop occurs. \\
+The difference we found between the magnitude of the output voltages on the two regimes 
+was close to 4.468 - 3.058 = 1.41 V.
+
 
 \subsection{New switching voltage in Schmitt-trigger with operational amplifier}
 
@@ -209,8 +235,8 @@ For this measurement, we used the following list of tools:
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.5\linewidth]{task3.jpg}
-    \caption{b}
-    \label{fig:task1}
+    \caption{Relaxation oscillator setup with three resistors and one capacitor}
+    \label{fig:task3}
 \end{figure}
 
 \begin{figure}[H]
@@ -219,13 +245,13 @@ For this measurement, we used the following list of tools:
     \begin{subfigure}{0.48\textwidth}
         \centering
         \includegraphics[width=\linewidth]{U1_U2_TL.jpg}
-        \caption{c}
+        \caption{Measurement of U$_{1}$ on channel 2 and U$_{2}$ on channel 1}
     \end{subfigure}
     \hfill
     \begin{subfigure}{0.48\textwidth}
         \centering
         \includegraphics[width=\linewidth]{U1_Uo_TL.jpg}
-        \caption{d}
+        \caption{Measurement of U$_{1}$ on channel 2 and U$_{out}$ on channel 1}
     \end{subfigure}
 
     \vspace{0.3cm}
@@ -234,13 +260,13 @@ For this measurement, we used the following list of tools:
     \begin{subfigure}{0.48\textwidth}
         \centering
         \includegraphics[width=\linewidth]{U2_Uo_TL.jpg}
-        \caption{e}
+        \caption{Measurement of U$_{out}$ on channel 2 and U$_{2}$ on channel 1}
     \end{subfigure}
     \hfill
     \begin{subfigure}{0.48\textwidth}
         \centering
         \includegraphics[width=\linewidth]{U1_U2_AU.jpg}
-        \caption{f}
+        \caption{Measurement of U$_{2}$ on channel 2 and U$_{1}$ on channel 1}
     \end{subfigure}
 
     \vspace{0.3cm}
@@ -249,19 +275,20 @@ For this measurement, we used the following list of tools:
     \begin{subfigure}{0.48\textwidth}
         \centering
         \includegraphics[width=\linewidth]{U1_Uo_AU.jpg}
-        \caption{g}
+        \caption{Measurement of U$_{1}$ on channel 2 and U$_{out}$ on channel 1}
     \end{subfigure}
     \hfill
     \begin{subfigure}{0.48\textwidth}
         \centering
         \includegraphics[width=\linewidth]{U2_Uo_AU.jpg}
-        \caption{h}
+        \caption{Measurement of U$_{2}$ on channel 2 and U$_{out}$ on channel 1}
     \end{subfigure}
 
-    \caption{Oscilloscope measurements of the integrator circuit
-    for sinusoidal, square and triangular input signals,
-    with and without the additional resistor $R_P$.}
-    \label{fig:integrator}
+    \caption{Different measured waveforms of the relaxation 
+    oscillator setup with two operational amiplifiers, TL071CP 
+    and $\mu$A741CN; varying the electrodes measured on the 
+    channels of the oscilloscope.}
+    \label{fig:relaxation}
 \end{figure}
 
 \subsection{Switching thresholds of the transistor Schmitt trigger circuit}
@@ -269,8 +296,8 @@ For this measurement, we used the following list of tools:
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.5\linewidth]{task4.jpg}
-    \caption{f}
-    \label{fig:task1}
+    \caption{Schmitt trigger circuit setup with two transistors and four resistors}
+    \label{fig:task4}
 \end{figure}
 
 \section{Conclusion}
