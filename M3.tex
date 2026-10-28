@@ -1,0 +1,208 @@
+%=====================================================================%
+% DOCUMENT DEFINITION
+%=====================================================================%
+
+
+\documentclass[12pt]{article}
+
+\usepackage[english]{babel}
+
+\usepackage{subcaption}
+
+\usepackage{gensymb}
+
+\usepackage{setspace}
+\onehalfspacing
+
+\usepackage[
+    a4paper,
+    top=2cm,
+    bottom=2cm,
+    left=2cm,
+    right=2cm,
+    marginparwidth=1.75cm
+]{geometry}
+
+\usepackage[skip=8pt plus1pt, indent=20pt]{parskip}
+
+% inserting images
+\usepackage{graphicx}
+\usepackage{float}
+\graphicspath{{images/}}
+
+% references
+\usepackage{csquotes}
+\usepackage[
+    backend=biber,
+    style=numeric-comp,
+    sorting=none
+]{biblatex}
+\addbibresource{references.bib}
+
+
+% math
+\usepackage{amsmath}
+\usepackage{empheq}
+
+% tables
+\usepackage{booktabs}
+
+% color
+\usepackage{xcolor}
+
+% dummy text
+\usepackage{lipsum}
+
+
+%=====================================================================%
+% DOCUMENT
+%=====================================================================%
+\setlength{\parindent}{0pt} 
+
+
+\begin{document}
+
+%=====================================================================%
+% TITLE PAGE
+%=====================================================================%
+
+\begin{titlepage}
+
+\centering
+\singlespacing
+
+% ------------------------------------------------
+% UNIVERSITY LOGO
+% ------------------------------------------------
+\includegraphics[width=0.70\textwidth]{bmelogo.png}
+
+\vspace{0.4cm}
+
+{\Large\bfseries
+Budapest University of Technology and Economics\par}
+
+\vspace{0.15cm}
+
+{\Large Faculty of Natural Sciences\par}
+
+% ------------------------------------------------
+% TITLE
+% ------------------------------------------------
+
+\vspace{3.3cm}
+
+{\LARGE\bfseries
+M3 - Study of Comparators \\
+\par}
+
+\vspace{0.3cm}
+
+{\Large Lab report\par}
+
+% ------------------------------------------------
+% DATE
+% ------------------------------------------------
+
+\vspace{2.6cm}
+
+{\Large 04/11/2026\par}
+
+% ------------------------------------------------
+% LAB RESPONSIBLE
+% ------------------------------------------------
+
+\vspace{2.5cm}
+
+{\Large
+\underline{Lab responsible}\\[-0.05cm]
+\textbf{Viktor Farkas}
+\par}
+
+% ------------------------------------------------
+% STUDENTS
+% ------------------------------------------------
+
+\vfill
+
+\begin{minipage}[t]{0.47\textwidth}
+    \centering
+
+    {\Large {Student}\par}
+
+    \vspace{0.1cm}
+
+    {\bfseries
+    Abigél ORTUTAY (UGHRKC)\par}
+     {\normalsize
+    Physics-engineering BSc 3rd year\par}
+    {\normalsize
+    abico.ortutay@gmail.com}
+    
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.47\textwidth}
+    \centering
+
+    {\Large {Student}\par}
+   
+
+    \vspace{0.1cm}
+
+    {\bfseries
+    Hanna ERTL (SPH4U7)\par}
+    {\normalsize
+    Physics-engineering BSc 3rd year\par}
+    {\normalsize
+    hannavedaertl@gmail.com}
+    
+    
+\end{minipage}
+
+\vspace{1.3cm}
+
+\end{titlepage}
+
+
+%=====================================================================%
+% REPORT STARTS HERE
+%=====================================================================%
+\begin{abstract}
+    \noindent 
+\end{abstract}
+
+\section{Theoretical introduction} 
+
+\section{Measurement tools}
+For this measurement, we used the following list of tools:
+\begin{itemize}
+\item ST $\mu$A741CN operational amplifier
+\item OK Industries Inc. CM-140 L breadboard
+\item Resistors: 22 k$\Omega$ (1 piece), 10 k$\Omega$ (2 pieces), 100 k$\Omega$ (1 piece)
+\item Jumping wires (6 pieces)
+\item Crocodile clips (6 pieces)
+\item Banana plugs (6 pieces)
+\item TI TL071CP operational amplifier
+\item Capacitor: 6.8 nF (1 piece)
+\item HM8040-2 HAMEG Triple power supply
+\item HM 8011-3 HAMEG Digital multimeter
+\item SIGLENT SDS 1072CML Digital storage oscilloscope
+\item Handheld multimeter
+\end{itemize}
+
+\newpage \section{Measurement setup}
+
+\pagebreak\section{Measurements}
+
+\subsection{Switching voltage of the comparator with an operational amplifier}
+
+\subsection{New switching voltage in Schmitt-trigger with operational amplifier}
+
+\subsection{Waveforms of the relaxation oscillator with operational amplifier}
+
+\subsection{Switching thresholds of the transistor Schmitt trigger circuit}
+
+\section{Conclusion}
+
+\nocite{*}
+\printbibliography 
+\end{document}
