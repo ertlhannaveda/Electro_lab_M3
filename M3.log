@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.10.15)  30 OCT 2026 11:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.10.15)  30 OCT 2026 13:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -682,50 +682,50 @@ Underfull \hbox (badness 10000) in paragraph at lines 213--216
 <task3.jpg, id=31, 4047.12pt x 3035.34pt>
 File: task3.jpg Graphic file (type jpg)
 <use task3.jpg>
-Package pdftex.def Info: task3.jpg  used on input line 257.
+Package pdftex.def Info: task3.jpg  used on input line 256.
 (pdftex.def)             Requested size: 241.84843pt x 181.37149pt.
  [4]
 <U1_U2_TL.jpg, id=35, 4047.12pt x 3035.34pt>
 File: U1_U2_TL.jpg Graphic file (type jpg)
 <use U1_U2_TL.jpg>
-Package pdftex.def Info: U1_U2_TL.jpg  used on input line 267.
+Package pdftex.def Info: U1_U2_TL.jpg  used on input line 295.
 (pdftex.def)             Requested size: 232.17242pt x 174.09996pt.
 <U1_Uo_TL.jpg, id=36, 4047.12pt x 3035.34pt>
 File: U1_Uo_TL.jpg Graphic file (type jpg)
 <use U1_Uo_TL.jpg>
-Package pdftex.def Info: U1_Uo_TL.jpg  used on input line 273.
+Package pdftex.def Info: U1_Uo_TL.jpg  used on input line 301.
 (pdftex.def)             Requested size: 232.17242pt x 174.09996pt.
 <U2_Uo_TL.jpg, id=37, 4047.12pt x 3035.34pt>
 File: U2_Uo_TL.jpg Graphic file (type jpg)
 <use U2_Uo_TL.jpg>
-Package pdftex.def Info: U2_Uo_TL.jpg  used on input line 282.
+Package pdftex.def Info: U2_Uo_TL.jpg  used on input line 310.
 (pdftex.def)             Requested size: 232.17242pt x 174.09996pt.
 <U1_U2_AU.jpg, id=38, 4047.12pt x 3035.34pt>
 File: U1_U2_AU.jpg Graphic file (type jpg)
 <use U1_U2_AU.jpg>
-Package pdftex.def Info: U1_U2_AU.jpg  used on input line 288.
+Package pdftex.def Info: U1_U2_AU.jpg  used on input line 316.
 (pdftex.def)             Requested size: 232.17242pt x 174.09996pt.
 <U1_Uo_AU.jpg, id=39, 4047.12pt x 3035.34pt>
 File: U1_Uo_AU.jpg Graphic file (type jpg)
 <use U1_Uo_AU.jpg>
-Package pdftex.def Info: U1_Uo_AU.jpg  used on input line 297.
+Package pdftex.def Info: U1_Uo_AU.jpg  used on input line 325.
 (pdftex.def)             Requested size: 232.17242pt x 174.09996pt.
 <U2_Uo_AU.jpg, id=40, 4047.12pt x 3035.34pt>
 File: U2_Uo_AU.jpg Graphic file (type jpg)
 <use U2_Uo_AU.jpg>
-Package pdftex.def Info: U2_Uo_AU.jpg  used on input line 303.
+Package pdftex.def Info: U2_Uo_AU.jpg  used on input line 331.
 (pdftex.def)             Requested size: 232.17242pt x 174.09996pt.
- [5 <./task3.jpg>]
-<task4.jpg, id=44, 4047.12pt x 3035.34pt>
+ [5 <./task3.jpg>] [6 <./U1_U2_TL.jpg> <./U1_Uo_TL.jpg> <./U2_Uo_TL.jpg> <./U1_U2_AU.jpg> <./U1_Uo_AU.jpg> <./U2_Uo_AU.jpg>]
+<task4.jpg, id=50, 4047.12pt x 3035.34pt>
 File: task4.jpg Graphic file (type jpg)
 <use task4.jpg>
-Package pdftex.def Info: task4.jpg  used on input line 318.
+Package pdftex.def Info: task4.jpg  used on input line 357.
 (pdftex.def)             Requested size: 241.84843pt x 181.37149pt.
- [6 <./U1_U2_TL.jpg> <./U1_Uo_TL.jpg> <./U2_Uo_TL.jpg> <./U1_U2_AU.jpg> <./U1_Uo_AU.jpg> <./U2_Uo_AU.jpg>]
+ [7 <./task4.jpg>]
 
-LaTeX Warning: Empty bibliography on input line 326.
+LaTeX Warning: Empty bibliography on input line 396.
 
-[7 <./task4.jpg>] (./M3.aux)
+[8] (./M3.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
@@ -744,18 +744,18 @@ Package logreq Info: Writing requests to 'M3.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 15912 strings out of 469006
- 297776 string characters out of 5454812
- 1250531 words of memory out of 5000000
- 44443 multiletter control sequences out of 15000+600000
+ 15924 strings out of 469006
+ 297991 string characters out of 5454812
+ 1253586 words of memory out of 5000000
+ 44455 multiletter control sequences out of 15000+600000
  635879 words of font info for 68 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
  70i,12n,79p,761b,1744s stack positions out of 10000i,1000n,20000p,200000b,200000s
- </Users/school/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on M3.pdf (8 pages, 15392647 bytes).
+ </Users/school/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on M3.pdf (9 pages, 15409320 bytes).
 PDF statistics:
- 108 PDF objects out of 1000 (max. 8388607)
- 61 compressed objects within 1 object stream
+ 116 PDF objects out of 1000 (max. 8388607)
+ 66 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  51 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -176,12 +176,12 @@ M3 - Study of Comparators \\
 For this measurement, we used the following list of tools:
 \begin{itemize}
 \item ST $\mu$A741CN operational amplifier
+\item TI TL071CP operational amplifier
 \item OK Industries Inc. CM-140 L breadboard
 \item Resistors: 22 k$\Omega$ (1 piece), 10 k$\Omega$ (2 pieces), 100 k$\Omega$ (1 piece),  1 k$\Omega$ (1 piece)
 \item Jumping wires (6 pieces)
 \item Crocodile clips (6 pieces)
 \item Banana plugs (6 pieces)
-\item TI TL071CP operational amplifier
 \item Capacitor: 6.8 nF (1 piece)
 \item HM8040-2 HAMEG Triple power supply
 \item HM 8011-3 HAMEG Digital multimeter
@@ -251,13 +251,41 @@ to the previous task.
 
 \subsection{Waveforms of the relaxation oscillator with operational amplifier}
 
-
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.5\linewidth]{task3.jpg}
     \caption{Relaxation oscillator setup with three resistors and one capacitor}
     \label{fig:task3}
 \end{figure}
+To determine the value of the capacitance we needed to use in the relaxed oscillator setup, 
+we used the following equations first to find the switching voltages, and then to determine 
+the capacitance through the period equation knowing that the period is the inverse of the 
+frequency:
+\begin{gather*}
+    U_{1s1} = U_+ \cdot \frac{R_2}{R_2 + R_3} \quad \text{and} \quad U_{1s2} = U_- \cdot \frac{R_2}{R_2 + R_3}\\[1.2em]
+    T = 2 \cdot R_1 \cdot C \cdot \ln\left( \frac{U_+ + U_{1s1}}{U_+ + U_{1s2}} \right)\\[1.2em]
+    C = \frac{1}{2 \cdot f \cdot R_1 \cdot \ln\left( 1 + \frac{2 R_2}{R_3} \right)} = 6.49 \text{ nF}
+\end{gather*}
+
+The capacitor with the closes value we found was that of 6.8 nF. Beginning with the 
+TL071CP operational amplifier (seen in figure 3a, b, and c) we checked the waveform shapes 
+of inputs and outputs, then we repeated this with the $\mu$A741CN operational amplifier 
+(figure 3d, e, f). The observed shapes of the waveforms are summarised in the table below:
+
+\begin{table}[H]
+    \centering
+    \label{tab:relaxed}
+    \begin{tabular}{|c|c|c|c|}
+        \hline
+        Operational Amplifier & U1 & U2 & Uo \\
+        \hline
+        TL071CP & Square & Triangle & Square  \\
+        \hline
+        $\mu$A741CN & Trapeze & Soft triangle & Trapeze  \\
+        \hline
+    \end{tabular}
+    \caption{Observed waveforms of the noninverting (U1), inverting (U2), and output (Uo) signals with TL071CP and $\mu$A741CN operational amplifiers.}
+\end{table}
 
 \begin{figure}[H]
     \centering
@@ -265,13 +293,13 @@ to the previous task.
     \begin{subfigure}{0.48\textwidth}
         \centering
         \includegraphics[width=\linewidth]{U1_U2_TL.jpg}
-        \caption{Measurement of U$_{1}$ on channel 2 and U$_{2}$ on channel 1}
+        \caption{TL: Measurement of U$_{1}$ on channel 2 and U$_{2}$ on channel 1}
     \end{subfigure}
     \hfill
     \begin{subfigure}{0.48\textwidth}
         \centering
         \includegraphics[width=\linewidth]{U1_Uo_TL.jpg}
-        \caption{Measurement of U$_{1}$ on channel 2 and U$_{out}$ on channel 1}
+        \caption{TL: Measurement of U$_{1}$ on channel 2 and U$_{out}$ on channel 1}
     \end{subfigure}
 
     \vspace{0.3cm}
@@ -280,13 +308,13 @@ to the previous task.
     \begin{subfigure}{0.48\textwidth}
         \centering
         \includegraphics[width=\linewidth]{U2_Uo_TL.jpg}
-        \caption{Measurement of U$_{out}$ on channel 2 and U$_{2}$ on channel 1}
+        \caption{TL: Measurement of U$_{out}$ on channel 2 and U$_{2}$ on channel 1}
     \end{subfigure}
     \hfill
     \begin{subfigure}{0.48\textwidth}
         \centering
         \includegraphics[width=\linewidth]{U1_U2_AU.jpg}
-        \caption{Measurement of U$_{2}$ on channel 2 and U$_{1}$ on channel 1}
+        \caption{AU: Measurement of U$_{2}$ on channel 2 and U$_{1}$ on channel 1}
     \end{subfigure}
 
     \vspace{0.3cm}
@@ -295,21 +323,32 @@ to the previous task.
     \begin{subfigure}{0.48\textwidth}
         \centering
         \includegraphics[width=\linewidth]{U1_Uo_AU.jpg}
-        \caption{Measurement of U$_{1}$ on channel 2 and U$_{out}$ on channel 1}
+        \caption{AU: Measurement of U$_{1}$ on channel 2 and U$_{out}$ on channel 1}
     \end{subfigure}
     \hfill
     \begin{subfigure}{0.48\textwidth}
         \centering
         \includegraphics[width=\linewidth]{U2_Uo_AU.jpg}
-        \caption{Measurement of U$_{2}$ on channel 2 and U$_{out}$ on channel 1}
+        \caption{AU: Measurement of U$_{2}$ on channel 2 and U$_{out}$ on channel 1}
     \end{subfigure}
 
     \caption{Different measured waveforms of the relaxation 
     oscillator setup with two operational amiplifiers, TL071CP 
-    and $\mu$A741CN; varying the electrodes measured on the 
-    channels of the oscilloscope.}
+    and $\mu$A741CN; displaying inputs and output on the channels.}
     \label{fig:relaxation}
 \end{figure}
+As seen in Table 1 and Figure 3, U1 and Uo share the same waveform shape with different 
+amplitude while U2 has a differing shape. When using TL U1 and Uo have ideal square waveform 
+with steep edges showing fast switching, while U2 has an equally ideal triangle form with 
+well defined peaks.\\
+However, when using AU these shapes get rounded and distorted, the rising regime of the 
+triangular waveform of both U1 and Uo are no longer as fast, while the triangle waveform of U2 
+turns into a rounded series of crests and troughs.\\
+U1 and Uo have a similar shape as they are a result of a purely resistive voltage divider. 
+On the other hand, U2 is governed by the RC constant, resulting in a charge and discharge behaviour which 
+can be seen in the triangular form of the signal. In the case of the AU opamp, the low slew rate 
+(SR = 0.5 V/$\mu$s) of the opamp causes the distortion of the waveforms, as it inhibits the instant 
+switching we saw with the TL opamp having a much higher slew rate (SR = 13 V/$\mu$s).
 
 \subsection{Switching thresholds of the transistor Schmitt trigger circuit}
 
@@ -320,7 +359,39 @@ to the previous task.
     \label{fig:task4}
 \end{figure}
 
+We configured the transistor Schmitt-trigger circuit, and measured the 
+input switching thresholds of this configuration. We identified the input 
+switching voltages to be around 1.2 - 1.3 V and 0.8 V, where we have 5.004 V and 
+0.523 V respectively. Between 0 and 1.2 V we observed a constant 0.523 V, which started 
+rising to 0.69 V right before switching at 1.3 V. Similarly, we observed the 5.004 V 
+decreasing. Using the following equations, the theoretical switching thresholds are:
+\begin{gather*}
+    U_{\text{in}\downarrow} = U_{E1} + U_{BE1} \approx 0.21\text{ V} + 0.60\text{ V} \approx 0.81\text{ V}\\[1.2em]
+    U_{\text{in}\uparrow} = U_E + U_{BE1} \approx 0.55\text{ V} + 0.65\text{ V} \approx 1.20 \text{ V}
+\end{gather*}
+These theoretical values align with out measured values near perfectly, with ~1\% deviation error.\\
+In the 0 - 1.2 V regime, T1 is off and T2 is on, this results in the output 
+voltage being dictated by the saturation collector-emitter voltage of T2. Theoretically, 
+the output voltage here is 0.54 V, given by the sum of the voltage drop on the shared 
+emitter resistor and the saturation voltage of the collector-emitter on T2. 
+Here we measured 0.523 V, giving only 3\% error. As T1 starts to conduct 
+the output voltage raises, this is what we measured between 1.2 - 1.3 V right before 
+switching, where the output voltage was 0.69 V. \\
+In the upper saturation limit, the output voltage should be the full 5 V of the 
+positive supply theoretically, as T2 shuts off and T1 is saturated, delivering rail to rail 
+output. However, here we measure a value 0.004 V above the positive supply voltage, 
+we suspect this to be some inaccuracy of measurement, as it cannot be higher than the 
+supply voltage, as energy cannot be created.\\
+From these switching thresholds we calculate the experimental hysteresis - using 
+the middle value of 1.2 - 1.3 V - to be 1.25 - 0.8 = 0.45 V. From the theoretical 
+switching voltages (of 1.2 - 0.81) we get the theoretical hysteresis to be 0.39 V.
+Giving us a deviation of near 15\% from the theoretical hysteresis. We believe this 
+is also a result of the resolution of our triple supply device, as we were unable to 
+set an input more precise than 1.2 or 1.3 V, it is possible that our switching threshold 
+was closer to 1.2 V which would have resulted in only ~2\% deviation from the theoretical value.
+
 \section{Conclusion}
+
 
 \nocite{*}
 \printbibliography 
