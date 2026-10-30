@@ -171,7 +171,28 @@ M3 - Study of Comparators \\
 \end{abstract}
 
 \section{Theoretical introduction}
-
+In this laboratory exercise we used two operational amplifiers - high speed 
+TL071CP (slew rate $SR \approx 13\text{--}20\text{ V}/\mu\text{s}$) and the 
+general purpose bipolar $\mu$A741CN (slew rate $SR \approx 0.5\text{ V}/\mu\text{s}$) 
+— as well as BC182 NPN bipolar junction transistors for discrete logic switching.
+The theoretical background of the four configurations used during this laboratory 
+exercise are the following:\\\\
+A basic op-amp comparator evaluates two input voltages and switches its output to 
+either supply rail depending on which input is larger. The reference switching threshold U1 
+at the non-inverting terminal is set by a passive voltage divider given by the equation: 
+\begin{center} $U_1 = U_+ \cdot \frac{R_2}{R_1 + R_2}$ \end{center}
+This results in the output voltage switching states whenever the inverting input voltage 
+U2 crosses this threshold. This configuration is sensitive to input noise however, 
+as the switching threshold is a distinct value and allows no "wiggle room" when switching states.\\\\
+As a solution adding a feedback resistor R3 introduces positive feedback, establishing a noise-rejecting hysteresis band so small fluctuations do not cause unwanted output oscillations. The threshold voltage U1 dynamically shifts based on the current output state:
+\begin{center} $U_1 = \frac{U_+}{1 + \frac{R_1}{R_2} + \frac{R_1}{R_3}} + \frac{U_{\text{out}}}{1 + \frac{R_3}{R_2} + \frac{R_3}{R_1}}$ \end{center}
+which creates distinct upper ($U_{1+}$) and lower ($U_{1-}$) switching levels.\\\\
+Combining positive feedback with an RC timing network allows the operational amplifier to generate continuous square and triangular waveforms without needing an external input signal. The capacitor repeatedly charges and discharges through R1 between the switching thresholds, yielding an oscillation period T and frequency f: 
+\begin{center} $T = 2 \cdot R_1 \cdot C \cdot \ln\left(1 + \frac{2 R_2}{R_3}\right) \quad \text{and} \quad f = \frac{1}{T}$ \end{center}
+\vspace{0.3cm}
+A discrete Schmitt trigger uses two NPN transistors (T1, T2) sharing a common emitter resistor $R_E$ to achieve positive feedback and hysteresis. The switching thresholds occur when the base input voltage overcomes the shared emitter voltage plus the internal base-emitter diode turn-on drop represented by the equations: 
+\begin{center} $U_{\text{in}} = U_E + U_{BE1} \quad \text{where} \quad U_E \approx \frac{U_{supp} - U_{CE,\text{sat}}}{R_C + R_E} \cdot R_E$ \end{center}
+Because the active collector resistor changes depending on whether T1 or T2 is conducting, the shared emitter voltage $U_E$ shifts between two levels, establishing the upper and lower switching thresholds.
 
 \section{Measurement tools}
 For this measurement, we used the following list of tools:
