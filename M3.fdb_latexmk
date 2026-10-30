@@ -1,14 +1,14 @@
 # Fdb version 4
-["biber M3"] 0 "M3.bcf" "M3.bbl" "M3" 1793199216.39607 0
+["biber M3"] 0 "M3.bcf" "M3.bbl" "M3" 1793357983.54027 0
   "M3.bcf" 0 -1 0 "pdflatex"
   "references.bib" 0 -1 0 ""
   (generated)
   "M3.bbl"
   "M3.blg"
   (rewritten before read)
-["pdflatex"] 1793199215.52466 "/Users/school/Sites/egyetem/5.felev/elektro labor/M3/Electro_lab_M3/M3.tex" "M3.pdf" "M3" 1793199216.39632 0
+["pdflatex"] 1793357982.61847 "/Users/school/Sites/egyetem/5.felev/elektro labor/M3/Electro_lab_M3/M3.tex" "M3.pdf" "M3" 1793357983.54053 0
   "/Users/school/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk" 1792075413.95837 14040 4016141da06742d0d9ed6a53c0db51b5 ""
-  "/Users/school/Sites/egyetem/5.felev/elektro labor/M3/Electro_lab_M3/M3.tex" 1793199214.32605 8328 3ff13a72ca1ddafb2f274a1bc18792d9 ""
+  "/Users/school/Sites/egyetem/5.felev/elektro labor/M3/Electro_lab_M3/M3.tex" 1793357982.36741 9946 52f765561cc1f79351f9a1fd8464b0e5 ""
   "/usr/local/texlive/2026basic/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm" 1136768653 1536 74b7293ec3713bb7fdca8dd1bd1f469c ""
   "/usr/local/texlive/2026basic/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2026basic/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -112,10 +112,10 @@
   "/usr/local/texlive/2026basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1792075005 79187 e3f5941707347d15c1721f52279213a2 ""
   "/usr/local/texlive/2026basic/texmf-var/web2c/pdftex/pdflatex.fmt" 1792074976 2966190 182a4671766c99aa4addd3b6e259852a ""
   "/usr/local/texlive/2026basic/texmf.cnf" 1772405582 628 bbc09d6d38872d53c11bb48dc9b14e88 ""
-  "M3.aux" 1793199216.32259 2461 4efc8eb9658bbb72c9827b4d8e745e3b "pdflatex"
+  "M3.aux" 1793357983.46326 2461 a6962179bf865fc89e0ec35cbfe0aea5 "pdflatex"
   "M3.bbl" 0 -1 0 "biber M3"
-  "M3.run.xml" 1793199216.32509 2332 01bd1987833df386824ec8e0444f20c3 "pdflatex"
-  "M3.tex" 1793199214.32605 8328 3ff13a72ca1ddafb2f274a1bc18792d9 ""
+  "M3.run.xml" 1793357983.46602 2332 01bd1987833df386824ec8e0444f20c3 "pdflatex"
+  "M3.tex" 1793357982.36741 9946 52f765561cc1f79351f9a1fd8464b0e5 ""
   "U1_U2_AU.jpg" 1793195855.45451 1583043 db2d38a944691936b9264de4f70126f1 ""
   "U1_U2_TL.jpg" 1793195856.61719 1732067 e804af056046aa9a7d51c97008dde44b ""
   "U1_Uo_AU.jpg" 1793195860.08511 1705020 1323fc155c801d8ca29c2bdfae9bc862 ""
