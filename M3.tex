@@ -167,10 +167,11 @@ M3 - Study of Comparators \\
 % REPORT STARTS HERE
 %=====================================================================%
 \begin{abstract}
-    \noindent 
+    \noindent This laboratory experiment explored four voltage switching circuits: a simple operational amplifier comparator, an operational amplifier Schmitt trigger, a relaxation oscillator, and a two-transistor Schmitt trigger. Measurements showed that the basic comparator was limited by output saturation (-3.06 V and 4.47 V), the op-amp Schmitt trigger created a 0.50 V hysteresis band to prevent noise issues, and the lower slew rate $\mu$A741 op-amp distorted the oscillator signals compared to the faster TL071 op-amp. Finally, the transistor Schmitt trigger had switching thresholds at 1.25 V and 0.80 V to yield a 0.45 V hysteresis, showing strong overall agreement between our practical measurements and theoretical calculations.
 \end{abstract}
 
-\section{Theoretical introduction} 
+\section{Theoretical introduction}
+
 
 \section{Measurement tools}
 For this measurement, we used the following list of tools:
@@ -391,7 +392,25 @@ set an input more precise than 1.2 or 1.3 V, it is possible that our switching t
 was closer to 1.2 V which would have resulted in only ~2\% deviation from the theoretical value.
 
 \section{Conclusion}
-
+In Task 1, testing the simple op-amp comparator revealed a switching threshold 
+of 1.6 V (close to the theoretical 1.56 V) with positive output reaching 
+4.468 V and negative output stopping at -3.058 V. This asymmetric limit occurs because 
+standard op-amps are not rail-to-rail devices, causing internal voltage drops across their 
+output transistors instead of reaching the full ±5 V supply rails.\newline
+Then, adding a 100 k$\Omega$ feedback resistor in task 2, we built an op-amp Schmitt 
+trigger with measured switching thresholds at 1.8 V and 1.3 V, corresponding to output 
+saturation levels of -3.086 V and 4.36 V. This created an experimental hysteresis of 0.50 V 
+that agreed well with theoretical predictions (1.78 V and 1.14 V), demonstrating how positive 
+feedback reduces sensitivity to input noise.\newline
+In Task 3, a relaxation oscillator was configured using a 6.8 nF capacitor to produce periodic 
+signals governed by an RC charging and discharging cycle. Comparing operational amplifiers 
+showed that the high-speed TL071 (slew rate 13 V/$\mu$s) produced ideal square and triangular 
+waves, whereas the slower $\mu$A741 (slew rate 0.5 V/$\mu$s) distorted the signals into rounded trapezoids.\newline
+Finally, the two-transistor Schmitt trigger produced a low baseline output of 
+0.523 V (rising to 0.69 V right before switching) while transistor T1 was off and T2 
+was saturated. The circuit switched upwards between 1.2 V and 1.3 V to reach a 5.004 V high 
+state and switched back down at 0.8 V, yielding an experimental hysteresis of 0.45 V that closely 
+matched the theoretical 1.20 V and 0.81 V bounds.
 
 \nocite{*}
 \printbibliography 

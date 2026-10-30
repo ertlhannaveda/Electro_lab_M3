@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.10.15)  30 OCT 2026 13:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.10.15)  30 OCT 2026 14:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -663,69 +663,69 @@ Package pdftex.def Info: bmelogo.png  used on input line 77.
 [1
 
 {/usr/local/texlive/2026basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./bmelogo.png>] [1] [2]
-<task1.jpg, id=21, 4047.12pt x 3035.34pt>
+<task1.jpg, id=23, 4047.12pt x 3035.34pt>
 File: task1.jpg Graphic file (type jpg)
 <use task1.jpg>
-Package pdftex.def Info: task1.jpg  used on input line 203.
+Package pdftex.def Info: task1.jpg  used on input line 204.
 (pdftex.def)             Requested size: 241.84843pt x 181.37149pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--212
+Underfull \hbox (badness 10000) in paragraph at lines 208--213
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 213--216
+Underfull \hbox (badness 10000) in paragraph at lines 214--217
 
  []
 
 [3 <./task1.jpg>]
-<task3.jpg, id=31, 4047.12pt x 3035.34pt>
+<task3.jpg, id=33, 4047.12pt x 3035.34pt>
 File: task3.jpg Graphic file (type jpg)
 <use task3.jpg>
-Package pdftex.def Info: task3.jpg  used on input line 256.
+Package pdftex.def Info: task3.jpg  used on input line 257.
 (pdftex.def)             Requested size: 241.84843pt x 181.37149pt.
  [4]
-<U1_U2_TL.jpg, id=35, 4047.12pt x 3035.34pt>
+<U1_U2_TL.jpg, id=37, 4047.12pt x 3035.34pt>
 File: U1_U2_TL.jpg Graphic file (type jpg)
 <use U1_U2_TL.jpg>
-Package pdftex.def Info: U1_U2_TL.jpg  used on input line 295.
+Package pdftex.def Info: U1_U2_TL.jpg  used on input line 296.
 (pdftex.def)             Requested size: 232.17242pt x 174.09996pt.
-<U1_Uo_TL.jpg, id=36, 4047.12pt x 3035.34pt>
+<U1_Uo_TL.jpg, id=38, 4047.12pt x 3035.34pt>
 File: U1_Uo_TL.jpg Graphic file (type jpg)
 <use U1_Uo_TL.jpg>
-Package pdftex.def Info: U1_Uo_TL.jpg  used on input line 301.
+Package pdftex.def Info: U1_Uo_TL.jpg  used on input line 302.
 (pdftex.def)             Requested size: 232.17242pt x 174.09996pt.
-<U2_Uo_TL.jpg, id=37, 4047.12pt x 3035.34pt>
+<U2_Uo_TL.jpg, id=39, 4047.12pt x 3035.34pt>
 File: U2_Uo_TL.jpg Graphic file (type jpg)
 <use U2_Uo_TL.jpg>
-Package pdftex.def Info: U2_Uo_TL.jpg  used on input line 310.
+Package pdftex.def Info: U2_Uo_TL.jpg  used on input line 311.
 (pdftex.def)             Requested size: 232.17242pt x 174.09996pt.
-<U1_U2_AU.jpg, id=38, 4047.12pt x 3035.34pt>
+<U1_U2_AU.jpg, id=40, 4047.12pt x 3035.34pt>
 File: U1_U2_AU.jpg Graphic file (type jpg)
 <use U1_U2_AU.jpg>
-Package pdftex.def Info: U1_U2_AU.jpg  used on input line 316.
+Package pdftex.def Info: U1_U2_AU.jpg  used on input line 317.
 (pdftex.def)             Requested size: 232.17242pt x 174.09996pt.
-<U1_Uo_AU.jpg, id=39, 4047.12pt x 3035.34pt>
+<U1_Uo_AU.jpg, id=41, 4047.12pt x 3035.34pt>
 File: U1_Uo_AU.jpg Graphic file (type jpg)
 <use U1_Uo_AU.jpg>
-Package pdftex.def Info: U1_Uo_AU.jpg  used on input line 325.
+Package pdftex.def Info: U1_Uo_AU.jpg  used on input line 326.
 (pdftex.def)             Requested size: 232.17242pt x 174.09996pt.
-<U2_Uo_AU.jpg, id=40, 4047.12pt x 3035.34pt>
+<U2_Uo_AU.jpg, id=42, 4047.12pt x 3035.34pt>
 File: U2_Uo_AU.jpg Graphic file (type jpg)
 <use U2_Uo_AU.jpg>
-Package pdftex.def Info: U2_Uo_AU.jpg  used on input line 331.
+Package pdftex.def Info: U2_Uo_AU.jpg  used on input line 332.
 (pdftex.def)             Requested size: 232.17242pt x 174.09996pt.
  [5 <./task3.jpg>] [6 <./U1_U2_TL.jpg> <./U1_Uo_TL.jpg> <./U2_Uo_TL.jpg> <./U1_U2_AU.jpg> <./U1_Uo_AU.jpg> <./U2_Uo_AU.jpg>]
-<task4.jpg, id=50, 4047.12pt x 3035.34pt>
+<task4.jpg, id=51, 4047.12pt x 3035.34pt>
 File: task4.jpg Graphic file (type jpg)
 <use task4.jpg>
-Package pdftex.def Info: task4.jpg  used on input line 357.
+Package pdftex.def Info: task4.jpg  used on input line 358.
 (pdftex.def)             Requested size: 241.84843pt x 181.37149pt.
  [7 <./task4.jpg>]
 
-LaTeX Warning: Empty bibliography on input line 396.
+LaTeX Warning: Empty bibliography on input line 416.
 
-[8] (./M3.aux)
+[8] [9] (./M3.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
@@ -744,18 +744,18 @@ Package logreq Info: Writing requests to 'M3.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 15924 strings out of 469006
- 297991 string characters out of 5454812
- 1253586 words of memory out of 5000000
- 44455 multiletter control sequences out of 15000+600000
+ 15925 strings out of 469006
+ 298001 string characters out of 5454812
+ 1253588 words of memory out of 5000000
+ 44456 multiletter control sequences out of 15000+600000
  635879 words of font info for 68 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 70i,12n,79p,761b,1744s stack positions out of 10000i,1000n,20000p,200000b,200000s
- </Users/school/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on M3.pdf (9 pages, 15409320 bytes).
+ 70i,12n,79p,865b,1744s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ </Users/school/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on M3.pdf (10 pages, 15424127 bytes).
 PDF statistics:
- 116 PDF objects out of 1000 (max. 8388607)
- 66 compressed objects within 1 object stream
+ 125 PDF objects out of 1000 (max. 8388607)
+ 71 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  51 words of extra memory for PDF output out of 10000 (max. 10000000)
 
